@@ -16,17 +16,18 @@
 </head>
 <body>
 
+  <!-- Paragraph containing initial text -->
   <p id="status">Enter the Metaverse</p>
+
+  <!-- Button to trigger the change -->
   <button id="enterBtn">Enter</button>
 
   <script>
     document.getElementById('enterBtn').addEventListener('click', () => {
       const statusParagraph = document.getElementById('status');
-      // Replace <p> with <h1> and update content
-      const newHeading = document.createElement('h1');
-      newHeading.id = 'status';
-      newHeading.textContent = 'Entered Metaverse';
-      statusParagraph.replaceWith(newHeading);
+
+      // Update the content to include an <h1> inside the <p>
+      statusParagraph.innerHTML = '<h1>Entered Metaverse</h1>';
     });
   </script>
 
